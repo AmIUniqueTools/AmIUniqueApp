@@ -1,6 +1,10 @@
-# AmIUnique App
-This repository contains AmIUnique device fingerprinting application source code. 
-The fingerprinting code is implemented as an Android library written in **Kotlin**, and includes **10 classes** that work together to extract attributes using three main techniques: **Shell Command Execution**, **Java Reflection**, and **Content Provider Inspection**.
+# AmIUnique Android
+This repository contains AmIUnique device fingerprinting application and library source code. 
+
+It accompanies the paper:
+
+**EXADPrinter: Semi-Exhaustive Permissionless Device Fingerprinting Within the Android Ecosystem** (PETS 2026)
+
 <p align="left">
   <img 
       src="./public/amiunique_demo.gif"
@@ -16,6 +20,14 @@ The fingerprinting code is implemented as an Android library written in **Kotli
     />
   </a>
 </p>
+
+### Citation
+
+If you use this artifact in your research, please cite:
+
+```
+
+```
 
 ## 📱 [`AmIUnique Android Application`](./app/) 
 The AmIUnique Android application is a demonstration app that integrates [`EXADPrinterLib`](EXADprinterLib) to collect device fingerprints on Android devices. The application extracts a large set of device attributes and sends them to a backend server for analysis.
