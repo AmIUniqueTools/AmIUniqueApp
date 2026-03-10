@@ -1,0 +1,54 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/general_settings">
+        <ListPreference
+            app:dialogTitle="@string/app_lang_dialog_title"
+            app:enabled="false"
+            app:entries="@array/lang_entries"
+            app:entryValues="@array/lang_values"
+            app:icon="@drawable/baseline_translate_24"
+            app:key="app_lang"
+            app:summary="@string/app_lang_summary"
+            app:title="@string/app_lang_title" />
+        <SwitchPreferenceCompat
+            app:key="screen_mode"
+            app:title="@string/screen_mode_title"
+            app:summaryOff="@string/light_mode_summary"
+            app:summaryOn="@string/dark_mode_summary"
+            app:defaultValue="false"
+            app:icon="@drawable/baseline_mode_night_24"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/notifications_header">
+        <SwitchPreferenceCompat
+            app:key="notifications_enabled"
+            app:title="@string/notifications_title"
+            app:summaryOff="@string/notifications_disabled"
+            app:summaryOn="@string/notifications_enabled"
+            app:defaultValue="false"
+            app:icon="@drawable/baseline_notifications_active_24"/>
+        <!-- New: Frequency (integer days) -->
+        <!-- Frequency (days) as an Int -->
+        <SeekBarPreference
+            android:max="30"
+            app:defaultValue="7"
+            app:dependency="notifications_enabled"
+            app:icon="@drawable/baseline_repeat_24"
+            app:key="notification_frequency_days"
+            app:min="1"
+            app:seekBarIncrement="1"
+            app:showSeekBarValue="true"
+            app:title="@string/notification_frequency_title" />
+
+
+        <!-- New: When to trigger (calendar/date picker) -->
+        <Preference
+            app:key="notification_trigger_time"
+            app:title="@string/notification_trigger_title"
+            app:summary="@string/notification_trigger_summary"
+            app:dependency="notifications_enabled"
+            app:icon="@drawable/baseline_access_time_24" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

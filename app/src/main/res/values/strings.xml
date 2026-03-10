@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">AmIUnique</string>
+    <string name="home">Home</string>
+    <string name="fingerprint">Device Fingerprint</string>
+    <string name="night_mode">Dark/Light mode</string>
+    <string name="Settings">Settings</string>
+    <string name="History">History</string>
+    <string name="PrivacyPolicy">Privacy Policy</string>
+    <string name="privacy">For the needs of this research project, AmIUnique collects anonymous data about the configuration of smartphones, operating systems, browsers and plugins. If you click the "Scan my device fingerprint" button, this type of information will be collected from this application. Although these kinds of data may form a "device fingerprint" that could in principle be combined with information about page requests and identifying details in order to track people\'s browsing habits, we will never do so.</string>
+    <string name="Sharing">Sharing of AmIUnique data</string>
+    <string name="sharingText">We may publish or share aggregated, statistical data from the AmIUnique project in order to facilitate privacy research, educate people about privacy problems, and to aid in the development of privacy-enhancing technologies. We have gone to great lengths to ensure that AmIUnique does not produce any records about anyone\'s browsing habits or the identities of any individual visitors, so we will never be in a position where we could share any such records. AmIUnique has no Third-Party Service Providers.</string>
+    <string name="Use">Our Use of Information from AmIUnique</string>
+    <string name="useText">We will analyze the collected data in order to establish if smartphone fingerprints can be used as a means to track online users. The purpose of this analysis is to set an automatic procedure to identify the most revealing features to inform platform holders to fix them to better improve privacy.</string>
+    <string name="Security">Security</string>
+    <string name="securityText">In a general way, Inria commits to carry out technical and organizational means to protect all information we gathered against illegal or fortuitous destruction, fortuitous loss, alteration, diffusion or unauthorized access. Nevertheless, Inria shall be required to divulge any information to comply with any applicable law or rules, or to respond to any administrative or judiciary order.\n\n
+    Although we make good faith efforts to store information collected in a secure operating environment, we cannot guarantee complete security. Information collected will be maintained for a length of time appropriate to the needs of this research project.
+    </string>
+    <string name="About">About</string>
+    <string name="WhoMaintain">Who maintains this application?</string>
+    <string name="maintainers">This application was created and is maintained by a team of researchers, who investigates the software diversity on the web. \nThe app is developed by the team behind the AmIUnique.org website.</string>
+    <string name="Purpose">What is the purpose of this web site?</string>
+    <string name="inform">Inform users about their position within the web ecosystem</string>
+    <string name="informText">With this app, we aim at providing users with some basic information about their configuration and how trackable it is. We also want to exploit the data we collect to advise platform holders about how they can make their operating systems less trackable.</string>
+    <string name="investigate">Investigate the diversity of device fingerprints</string>
+    <string name="investigateText">The research question we investigate is: how can we automatically reconfigure a user\'s platform to fuzz the device fingerprint in a realistic manner? The degree of realism is important to prevent users of our solution to be detected as such. The collection of a large base of real device fingerprints will allow us to tune our solution towards platforms that are as different as possible yet not distinguishable as "strange" configurations.</string>
+    <string name="mailUs">Mail Us</string>
+    <string name="Website">Website</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="app_title">Learn how identifiable you are</string>
+    <string name="app_description">This application aims at studying the diversity of smartphone fingerprints and providing developers with data to help them design good defenses. This application collects anonymous data without using a single permission (apart from the one providing access to the Internet) related to the device\'s configuration and operating system. The goal of our research is to understand if any application on the Play Store could identify users without relying on any given identifiers already present on Android.</string>
+    <string name="alert">If you consent and click on the button "Scan my device fingerprint", we will collect your device fingerprint.</string>
+    <string name="alert_details"><u>More details are available in the Privacy Policy.</u></string>
+    <string name="alert_notification">
+        Regularly scanning your fingerprint helps track its evolution. Enable notifications to receive a weekly reminder.
+    </string>
+    <string name="alert_notification_details">
+        <u>To change the frequency or time, go to Settings.</u>
+    </string>
+
+    <string name="search_btn">Search</string>
+    <string name="scan_fingerprint">Scan My Device Fingerprint</string>
+    <string name="fingerprint_loading_extraction">
+        Device Fingerprint extraction …
+    </string>
+    <string name="fingerprint_loading_processing">
+        Device Fingerprint processing …
+    </string>
+
+    <string name="fingerprint_sent_successfully">Device fingerprint sent successfully!</string>
+    <string name="fingerprint_failed_to_send">Failed to send device fingerprint!</string>
+    <string name="no_email_app">No email app installed</string>
+    <!-- Preference Titles -->
+    <string name="general_settings">Global settings</string>
+    <string name="screen_mode_title">Select Screen Mode</string>
+    <string name="light_mode_summary">Light Mode is currently enabled</string>
+    <string name="dark_mode_summary">Dark Mode is currently enabled</string>
+
+    <!-- Notification Settings -->
+    <string name="notifications_header">Notification Settings</string>
+    <string name="notifications_title">Enable Weekly Reminder Notifications</string>
+    <string name="notifications_summary">Receive a weekly notification to remind you to rescan your device fingerprint</string>
+    <string name="notifications_disabled">Notifications Disabled</string>
+    <string name="notifications_enabled">Notifications Enabled</string>
+
+    <string name="notification_frequency_title">Reminder frequency (days)</string>
+    <string name="notification_frequency_summary">How often to repeat the reminder</string>
+    <string name="notification_trigger_title">Notification trigger time</string>
+    <string name="notification_trigger_summary">Pick time when to trigger the notification</string>
+
+
+    <string name="fingerprint_reminder_title">\uD83D\uDD14 Weekly Reminder</string>
+    <string name="fingerprint_reminder_text">It\'s time to rescan your device fingerprint!</string>
+
+    <string name="app_lang_header">Language Settings</string>
+    <string name="app_lang_title">App Language</string>
+    <string name="app_lang_summary">Choose your preferred app language</string>
+    <string name="app_lang_dialog_title">Select Language</string>
+
+    <string name="android_id">Android ID</string>
+    <string name="device_model">Device Model</string>
+    <string name="device_brand">Device Brand</string>
+    <string name="device_manufacturer">Device Manufacturer</string>
+    <string name="sdk_version">SDK Version</string>
+    <string name="android_version">Android Version</string>
+    <string name="security_patch">Security Patch</string>
+    <string name="board">Board</string>
+    <string name="cpu_abi">CPU ABI</string>
+    <string name="device">Device</string>
+    <string name="build_fingerprint">Build Fingerprint</string>
+    <string name="hardware">Hardware</string>
+    <string name="host">Host</string>
+    <string name="id">ID</string>
+    <string name="build_time">Build Time</string>
+    <string name="radio_version">Radio Version</string>
+    <string name="available_locales">Available Locales</string>
+    <string name="hour_format">24 Hour Format</string>
+    <string name="date_format_order">Date Format Order</string>
+    <string name="screen_brightness">Screen Brightness</string>
+    <string name="screen_brightness_mode">Screen Brightness Mode</string>
+    <string name="font_scale">Font Scale</string>
+    <string name="accelerometer_rotation">Accelerometer Rotation</string>
+    <string name="adb_enabled">ADB Enabled</string>
+    <string name="airplane_mode_on">Airplane Mode</string>
+    <string name="screen_off_timeout">Screen Off Timeout</string>
+    <string name="vibrate_on">Vibrate On</string>
+    <string name="volume_alarm">Alarm Volume</string>
+    <string name="volume_music">Music Volume</string>
+    <string name="volume_notification">Notification Volume</string>
+    <string name="volume_ring">Ring Volume</string>
+    <string name="auto_time">Auto Time</string>
+    <string name="auto_time_zone">Auto Time Zone</string>
+    <string name="wifi_on">Wifi On</string>
+    <string name="bluetooth_on">Bluetooth On</string>
+    <string name="wifi_networks_available_notification_on">Wifi Networks Available Notification On</string>
+    <string name="wifi_sleep_policy">Wifi Sleep Policy</string>
+    <string name="lock_pattern_enabled">Lock Pattern Enabled</string>
+    <string name="system_uptime">System Uptime</string>
+    <string name="ringtones_list">Ringtones List</string>
+    <string name="ringtones_list_ext">Ringtones List</string>
+    <string name="system_typefaces">System Fonts</string>
+    <string name="conset_fingerprint">I consent to the collection of my device fingerprint</string>
+    <string name="conset_notification">I consent to receive a weekly reminder notification to rescan my fingerprint</string>
+    <string name="DataRemoval">Fingerprint Deletion Request</string>
+    <string name="DataRemovalText">To request the removal of your fingerprint, please send us an email with your identifier included.</string>
+    <string name="copy_id">Copy ID</string>
+    <string name="copy_our_email">Copy our email</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#165BAA</color>
+    <color name="secondary">#F765A3</color>
+    <color name="transparent">#00000000</color>
+
+
+    <color name="green_status">#4CAF50</color>
+
+    <color name="bcg_color">#FEF7FF</color>
+    <color name="bottom_nav_color">#F3EDF7</color>
+    <color name="card_bcg_color">#F7F2FA</color>
+    <color name="title_color">#000</color>
+    <color name="nav_item_color">#1D1B20</color>
+    <color name="loading_color">#7F7F7F</color>
+</resources>

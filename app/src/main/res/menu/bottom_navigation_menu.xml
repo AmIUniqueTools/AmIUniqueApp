@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_home"
+        android:enabled="true"
+        android:icon="@drawable/baseline_home_24"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/page_fingerprint"
+        android:enabled="true"
+        android:icon="@drawable/baseline_fingerprint_24"
+        android:title="@string/fingerprint" />
+</menu>

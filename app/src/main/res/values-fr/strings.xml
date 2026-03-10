@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AmIUnique</string>
+    <string name="home">Accueil</string>
+    <string name="fingerprint">Empreinte de l\'appareil</string>
+    <string name="night_mode">Mode Sombre/Claire</string>
+    <string name="Settings">Paramétres</string>
+    <string name="History">Historique</string>
+    <string name="PrivacyPolicy">Politique de confidentialité</string>
+    <string name="privacy">Dans le cadre de ce projet de recherche, AmIUnique collecte des données anonymes sur la configuration des smartphones, des systèmes d\'exploitation, des navigateurs et des plugins. Si vous cliquez sur le bouton "Scanner l\'empreinte de mon appareil", ce type d\'informations sera collecté à partir de cette application. Bien que ces types de données puissent constituer une "empreinte" qui pourrait en principe être combinée à des informations sur les demandes de page et les détails d\'identification afin de suivre les habitudes de navigation des personnes, nous ne le ferons jamais.</string>
+    <string name="Use">Notre utilisation des informations d\'AmIUnique</string>
+    <string name="useText">Nous analyserons les données collectées afin de déterminer si les empreintes digitales des smartphones peuvent être utilisées comme moyen de suivre les utilisateurs en ligne. L\'objectif de cette analyse est de mettre en place une procédure automatique pour identifier les fonctionnalités les plus révélatrices afin d\'informer les détenteurs de plateformes pour qu\'ils les corrigent afin d\'améliorer la confidentialité.</string>
+    <string name="Sharing">Partage des données d\'AmIUnique</string>
+    <string name="sharingText"> Nous pouvons publier ou partager des données agrégées et statistiques provenant du projet AmIUnique afin de faciliter la recherche sur la confidentialité, d\'éduquer les gens sur les problèmes de confidentialité et d\'aider au développement de technologies améliorant la confidentialité. Nous avons fait de grands efforts pour nous assurer qu\'AmIUnique ne produise aucun enregistrement sur les habitudes de navigation de quiconque ni sur l\'identité des visiteurs individuels, de sorte que nous ne serons jamais en mesure de partager de tels enregistrements. AmIUnique n\'a pas de fournisseurs de services tiers.</string>
+    <string name="Security">Sécurité</string>
+    <string name="securityText">De manière générale, Inria s\'engage à mettre en œuvre des moyens techniques et organisationnels pour protéger toutes les informations que nous avons recueillies contre toute destruction illégale ou fortuite, perte fortuite, altération, diffusion ou accès non autorisé. Néanmoins, Inria pourrait être tenue de divulguer toute information pour se conformer à toute loi ou règlementation applicable, ou pour répondre à toute ordonnance administrative ou judiciaire.\n\n
+    Bien que nous fassions des efforts de bonne foi pour stocker les informations collectées dans un environnement opérationnel sécurisé, nous ne pouvons garantir une sécurité totale. Les informations collectées seront conservées pendant une durée appropriée aux besoins de ce projet de recherche.
+    </string>
+    <string name="About">À propos</string>
+    <string name="WhoMaintain">Qui maintient cette application?</string>
+    <string name="maintainers">Cette application a été créée et est maintenue par une équipe de chercheurs, qui étudie la diversité des logiciels sur le web. \nL\'application est développée par l\'équipe derrière le site AmIUnique.org.</string>
+    <string name="Purpose">Quel est l\'objectif de ce site web?</string>
+    <string name="inform">Informer les utilisateurs sur leur position dans l\'écosystème web</string>
+    <string name="informText">Avec cette application, nous souhaitons fournir aux utilisateurs des informations de base sur leur configuration et sur leur traçabilité. Nous voulons également exploiter les données que nous collectons pour conseiller les responsables de plateformes sur les moyens de rendre leurs systèmes d\'exploitation moins traçables.</string>
+    <string name="investigate">Étudier la diversité des empreintes digitales</string>
+    <string name="investigateText">La question de recherche que nous étudions est: comment reconfigurer automatiquement la plateforme d\'un utilisateur pour brouiller l empreinte numérique de l\'appareil de manière réaliste? Le degré de réalisme est important pour éviter que les utilisateurs de notre solution soient détectés comme tels. La collecte d une large base d\'empreintes digitales réelles nous permettra d\'ajuster notre solution vers des plateformes aussi différentes que possible sans pour autant être perçues comme des configurations "étranges".</string>
+    <string name="mailUs">Envoyer un email</string>
+    <string name="Website">Site web</string>
+    <string name="navigation_drawer_open">Ouvrir</string>
+    <string name="navigation_drawer_close">Fermer</string>
+    <string name="app_title">Découvrez à quel point vous êtes unique </string>
+    <string name="app_description">Cette application vise à étudier la diversité des empreintes digitales des smartphones et de fournir aux développeurs les données nécessaires à la conception de bonnes défenses. Cette application collecte des données anonymes sans utiliser une seule permission (autre que celle qui permet l’accès à Internet) liée à la configuration de l’appareil et le système d’exploitation. Le but de notre recherche est de comprendre si une application sur le Play Store pourrait identifier les utilisateurs sans compter sur des identifiants donnés déjà présents sur Android.</string>
+    <string name="alert">Si vous consentez et cliquez sur <b>\"Scanner l\'Empreinte de Mon Appareil\"</b>, nous collecterons l\'empreinte numérique de votre appareil.</string>
+    <string name="alert_details"><u>Pour plus de détails, consultez la politique de confidentialité.</u></string>
+    <string name="alert_notification">Analyser régulièrement votre empreinte aide à suivre son évolution. Activez les notifications pour recevoir un rappel hebdomadaire.</string>
+    <string name="alert_notification_details"><u>Pour changer la fréquence ou l\’heure, rendez-vous dans les paramètres.</u></string>
+    <string name="search_btn">Rechercher</string>
+    <string name="scan_fingerprint">Scanner L\'Empreinte de Mon Appareil</string>
+    <string name="fingerprint_loading_extraction">
+        Extraction de l\'empreinte de l\'appareil …
+    </string>
+    <string name="fingerprint_loading_processing">
+        Traitement de l\'empreinte de l\'appareil …
+    </string>
+
+    <string name="fingerprint_sent_successfully">Empreinte digitale envoyée avec succès !</string>
+    <string name="fingerprint_failed_to_send">Échec de l\'envoi de l\'empreinte digitale !</string>
+    <string name="no_email_app">Application de messagerie non installée</string>
+    <!-- Preference Titles -->
+    <string name="general_settings">Paramétres généraux</string>
+    <string name="screen_mode_title">Choisir le mode</string>
+    <string name="light_mode_summary">Light Mode est activé</string>
+    <string name="dark_mode_summary">Dark Mode est activé</string>
+
+    <!-- Notification Settings -->
+    <string name="notifications_header">Paramétres des notification</string>
+    <string name="notifications_title">Activer les notifications de rappel hebdomadaire</string>
+    <string name="notifications_summary">Recevoir une notification hebdomadaire pour vous rappeler de rescanner l\'empreinte de votre appareil</string>
+    <string name="notifications_disabled">Notifications désactivées</string>
+    <string name="notifications_enabled">Notifications activées</string>
+
+    <string name="notification_frequency_title">Fréquence du rappel (jours)</string>
+    <string name="notification_frequency_summary">Définissez la fréquence de répétition du rappel</string>
+    <string name="notification_trigger_title">Heure de déclenchement des notifications</string>
+    <string name="notification_trigger_summary">Choisissez l\`heure de déclenchement de la notification</string>
+
+
+
+    <string name="fingerprint_reminder_title">\uD83D\uDD14 Rappel AmIUnique</string>
+    <string name="fingerprint_reminder_text">Il est temps de rescanner l\'empreinte de votre appareil. Ouvrez l\'application pour lancer le scan.</string>
+
+    <string name="app_lang_header">Paramétres de langues</string>
+    <string name="app_lang_title">Langue</string>
+    <string name="app_lang_summary">Choisir votre langue</string>
+    <string name="app_lang_dialog_title">Langue</string>
+
+
+    <string name="android_id">ID Android</string>
+    <string name="device_model">Modèle de l\'appareil</string>
+    <string name="device_brand">Marque de l\'appareil</string>
+    <string name="device_manufacturer">Fabricant de l\'appareil</string>
+    <string name="sdk_version">Version SDK</string>
+    <string name="android_version">Version Android</string>
+    <string name="security_patch">Patch de sécurité</string>
+    <string name="board">Carte mère</string>
+    <string name="cpu_abi">ABI CPU</string>
+    <string name="device">Appareil</string>
+    <string name="build_fingerprint">Identifiant du build</string>
+    <string name="hardware">Matériel</string>
+    <string name="host">Hôte</string>
+    <string name="id">ID</string>
+    <string name="build_time">Temps de construction</string>
+    <string name="radio_version">Version radio</string>
+    <string name="available_locales">Locales disponibles</string>
+    <string name="hour_format">Format 24 heures</string>
+    <string name="date_format_order">Ordre du format de date</string>
+    <string name="screen_brightness">Luminosité de l\'écran</string>
+    <string name="screen_brightness_mode">Mode de luminosité de l\'écran</string>
+    <string name="font_scale">Échelle de police</string>
+    <string name="accelerometer_rotation">Rotation de l\'accéléromètre</string>
+    <string name="adb_enabled">ADB activé</string>
+    <string name="airplane_mode_on">Mode avion</string>
+    <string name="screen_off_timeout">Délai d\'extinction de l\'écran</string>
+    <string name="vibrate_on">Vibreur activé</string>
+    <string name="volume_alarm">Volume d\'alarme</string>
+    <string name="volume_music">Volume de la musique</string>
+    <string name="volume_notification">Volume de notification</string>
+    <string name="volume_ring">Volume de sonnerie</string>
+    <string name="auto_time">Heure automatique</string>
+    <string name="auto_time_zone">Fuseau horaire automatique</string>
+    <string name="wifi_on">Wifi activé</string>
+    <string name="bluetooth_on">Bluetooth activé</string>
+    <string name="wifi_networks_available_notification_on">Notification de réseaux Wifi disponibles activée</string>
+    <string name="wifi_sleep_policy">Politique de sommeil Wifi</string>
+    <string name="lock_pattern_enabled">Modèle de verrouillage activé</string>
+    <string name="system_uptime">Temps de fonctionnement du système</string>
+    <string name="ringtones_list">Liste des sonneries</string>
+    <string name="ringtones_list_ext">Liste des sonneries</string>
+    <string name="system_typefaces">Polices du système</string>
+    <string name="conset_fingerprint">Je consens à la collecte de l\'empreinte de mon appareil</string>
+    <string name="conset_notification">J\'accepte de recevoir des notifications hébdomadaire pour collecter mon empreinte digitale</string>
+    <string name="DataRemoval">Demande de suppression d’empreinte</string>
+    <string name="DataRemovalText">Pour demander la suppression de votre empreinte, veuillez nous envoyer un e-mail en incluant votre identifiant suivant dans le message.</string>
+    <string name="copy_id">Copier l`identifiant</string>
+    <string name="copy_our_email">Copier notre email</string>
+</resources>

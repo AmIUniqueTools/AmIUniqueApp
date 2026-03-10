@@ -1,0 +1,119 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
+    id 'signing'
+}
+
+android {
+    namespace 'com.amiunique.exadprinterlib'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 16
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+
+// EXADPrinterLib/build.gradle
+
+tasks.register("prepareReleaseArtifacts", Copy) {
+    dependsOn "assembleRelease"
+
+    // AAR produced by the Android Gradle Plugin
+    from("$buildDir/outputs/aar")
+    include("*-release.aar")
+
+    // Put artifacts in a predictable folder for GitHub Actions
+    into("$rootDir/dist")
+}
+
+
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = project.findProperty("group")
+                artifactId = "exadprinterlib"
+                version = (findProperty("VERSION_NAME") ?: "0.0.0-SNAPSHOT").toString()
+
+                pom {
+                    name = "EXADPrinterLib"
+                    description = "Android library for extracting permission-less device fingerprint attributes."
+                    url = "https://github.com/AmIUniqueTools/AmIUniqueApp"
+
+                    licenses {
+                        license {
+                            name = "GNU Affero General Public License v3.0"
+                            url = "https://www.gnu.org/licenses/agpl-3.0.en.html"
+                        }
+                    }
+
+                    developers {
+                        developer {
+                            id = "SihemBouhenniche"
+                            name = "Sihem BOUHENNICHE"
+                        }
+                    }
+
+                    scm {
+                        connection = "scm:git:git://github.com/AmIUniqueTools/AmIUniqueApp.git"
+                        developerConnection = "scm:git:ssh://github.com/AmIUniqueTools/AmIUniqueApp.gitt"
+                        url = "https://github.com/AmIUniqueTools/AmIUniqueApp"
+                    }
+                }
+            }
+
+        }
+
+        repositories {
+            maven {
+                name = "MavenCentral"
+                url = "https://ossrh-staging-api.central.sonatype.com/service/local/staging/deploy/maven2/"
+
+                credentials {
+                    username = project.findProperty("mavenCentralUsername")
+                    password = project.findProperty("mavenCentralPassword")
+                }
+            }
+        }
+
+    }
+
+    signing {
+        // Signs AAR, POM and also .module metadata
+        useInMemoryPgpKeys(
+                findProperty("signingInMemoryKey"),
+                findProperty("signingInMemoryKeyPassword")
+        )
+        sign publishing.publications.release
+    }
+
+}
