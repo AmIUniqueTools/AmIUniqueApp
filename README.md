@@ -120,10 +120,10 @@ repositories {
 }
 ```
 
-Then add the dependency in your build.gradle file:
+Then add the [dependency](https://central.sonatype.com/artifact/io.github.amiuniquetools/exadprinterlib) in your build.gradle file:
 ```
 dependencies {
-    implementation "io.github.amiuniquetools:exadprinterlib:<version>"
+    implementation("io.github.amiuniquetools:exadprinterlib:1.0.0")
 }
 ```
 Replace <version> with the latest available release.
