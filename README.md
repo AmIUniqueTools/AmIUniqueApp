@@ -30,7 +30,7 @@ If you use this artifact in your research, please cite:
 ```
 
 ## 📱 [`AmIUnique Android Application`](./app/) 
-The AmIUnique Android application is a demonstration app that integrates [`EXADPrinterLib`](EXADprinterLib) to collect device fingerprints on Android devices. The application extracts a large set of device attributes and sends them to a backend server for analysis.
+The AmIUnique Android application is a demonstration app that integrates [`EXADPrinterLib`](EXADPrinterLib) to collect device fingerprints on Android devices. The application extracts a large set of device attributes and sends them to a backend server for analysis.
 
 ### How the application works:
 
