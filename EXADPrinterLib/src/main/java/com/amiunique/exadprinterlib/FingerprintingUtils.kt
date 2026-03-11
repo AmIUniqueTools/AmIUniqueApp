@@ -71,6 +71,9 @@ fun isContentProviderUri(uriString: String): Boolean {
  */
 suspend fun getContentProviderValue(context: Context, uriString: String): JSONArray =
     withContext(Dispatchers.IO) {
+        // Emergency contacts attributes
+        val emergency_contact_attributes = arrayOf("key_miui_sos_emergency_contacts", "emergency_custom_number",
+            "emergency_selected_number", "tran_emergency_contact_info", "tran_emergency_contact_all")
         val jsonArray = JSONArray()
 
         // Parse URI string to create Uri object
@@ -91,9 +94,25 @@ suspend fun getContentProviderValue(context: Context, uriString: String): JSONAr
                             for (column in columns) {
                                 val columnIndex = cursor.getColumnIndex(column)
                                 var value = cursor.getString(columnIndex)
+
                                 // Check if value contains email, hash the email part
-                                value = maskEmailsInText(value)
+                                val emailRegex = Patterns.EMAIL_ADDRESS.toRegex()
+                                if (emailRegex.containsMatchIn(value)) {
+                                    value = maskEmailsInText(value)
+                                }
                                 rowObject.put(column, value)
+                            }
+
+                            // check if rowObject has keys "name" and "value"
+                            if (rowObject.has("name") && rowObject.has("value")) {
+                                val name = rowObject.getString("name")
+                                // check if the "name" is in emergency_contact_attributes
+                                if (name in emergency_contact_attributes) {
+                                    val value = rowObject.getString("value")
+                                    // hash the "value" from rowObject like that
+                                    val hashed = shortHash(value)
+                                    rowObject.put("value", "[EMERGENCY_NUMBER-$hashed]")
+                                }
                             }
                             jsonArray.put(rowObject)
                         } while (cursor.moveToNext())
