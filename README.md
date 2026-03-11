@@ -26,7 +26,13 @@ It accompanies the paper:
 If you use this artifact in your research, please cite:
 
 ```
-
+@article{bouhenniche2026exadprinter,
+  author  = {Bouhenniche Sihem, Laperdrix Pierre, Rudametkin Walter },
+  title   = {EXADPrinter: Semi-Exhaustive Permissionless Device Fingerprinting Within the Android Ecosystem},
+  journal = {Proceedings on Privacy Enhancing Technologies},
+  year    = {2026},
+  note    = {To appear (PETS 2026)}
+}
 ```
 
 ## 📱 [`AmIUnique Android Application`](./app/) 
