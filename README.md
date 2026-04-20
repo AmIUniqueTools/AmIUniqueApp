@@ -97,7 +97,7 @@ To receive fingerprints, your backend must implement the same API schema.
 
 **EXADPrinterLib** is an Android library that implements the core logic used to extract device fingerprints following the EXADPrinter framework.
 The library collects a large set of device attributes accessible without requesting sensitive permissions, using three main techniques: **Shell Command Execution**, **Java Reflection**, and **Content Provider Inspection**.
-More details are provided in the [Paper]()
+More details are provided in the [Paper](https://hal.science/hal-05585898)
 
 The library is designed to be easily integrated into any Android application and provides a simple API to trigger fingerprint extraction and retrieve the resulting attribute set.
 
